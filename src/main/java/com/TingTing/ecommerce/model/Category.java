@@ -6,14 +6,18 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Table(name = "categories")
 public class Category {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "category_name")
+
     // validate data from client to server
+    @Column(name = "category_name")
     private @NotBlank String categoryName;
+
     @Column(name = "category_description")
     private @NotBlank String description;
+
     @Column(name = "category_imageUrl")
     private @NotBlank String imageUrl;
 
