@@ -1,4 +1,4 @@
-package com.TingTing.ecommerce.service;
+package com.TingTing.ecommerce.model.service;
 
 import com.TingTing.ecommerce.model.Category;
 import com.TingTing.ecommerce.repository.CategoryRepo;
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+
 
 @Service
 public class CategoryService {
