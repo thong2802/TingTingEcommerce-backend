@@ -9,12 +9,24 @@
                 <scope>runtime</scope>
            </dependency> 
     2. Lists api
-        1. Create category API
-        2. get list category API
-        3. update category API
-        4. add product to category API
-        5. get list product in category API
-        6. update product API
+       1. Category
+           1. Create category API
+           2. get list category API
+           3. update category API
+       2. Product
+           4. add product to category API
+           5. get list product in category API
+           6. update product API
+       3. User
+          1. get all user
+          2. user signUp
+          3. user signIn
+       4. cart
+          1. getCartItem
+          2. addToCart
+          3. deleteCartItem
+          4. updateCartItem
+       5. Doing.....
     3. Database
         1. Mysql
             1. mysq -u root -p
@@ -22,7 +34,7 @@
             3. create databases ecommerce;
             4. use ecommerce;
             5. show tables;
-            6. show create tables categories;
+            6. show create table categories;
 
 2. Fontend : Vuejs
 3. Use Swagger create documment Api.

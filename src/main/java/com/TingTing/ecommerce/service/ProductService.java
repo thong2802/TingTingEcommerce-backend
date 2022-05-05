@@ -1,6 +1,6 @@
 package com.TingTing.ecommerce.service;
 
-import com.TingTing.ecommerce.dto.ProductDTO;
+import com.TingTing.ecommerce.dto.product.ProductDTO;
 import com.TingTing.ecommerce.model.Category;
 import com.TingTing.ecommerce.model.Product;
 import com.TingTing.ecommerce.repository.ProductRepository;

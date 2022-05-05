@@ -1,7 +1,7 @@
 package com.TingTing.ecommerce.controller;
 
 import com.TingTing.ecommerce.common.ApiResponse;
-import com.TingTing.ecommerce.dto.ProductDTO;
+import com.TingTing.ecommerce.dto.product.ProductDTO;
 import com.TingTing.ecommerce.model.Category;
 import com.TingTing.ecommerce.repository.CategoryRepo;
 import com.TingTing.ecommerce.service.ProductService;

@@ -1,4 +1,4 @@
-package com.TingTing.ecommerce.dto;
+package com.TingTing.ecommerce.dto.product;
 
 import com.TingTing.ecommerce.model.Product;
 
