@@ -1,7 +1,7 @@
 package com.TingTing.ecommerce.controller;
 import com.TingTing.ecommerce.common.ApiResponse;
 import com.TingTing.ecommerce.model.Category;
-import com.TingTing.ecommerce.model.service.CategoryService;
+import com.TingTing.ecommerce.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

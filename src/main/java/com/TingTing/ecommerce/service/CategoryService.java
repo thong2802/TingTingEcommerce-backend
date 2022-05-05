@@ -1,4 +1,4 @@
-package com.TingTing.ecommerce.model.service;
+package com.TingTing.ecommerce.service;
 
 import com.TingTing.ecommerce.model.Category;
 import com.TingTing.ecommerce.repository.CategoryRepo;
