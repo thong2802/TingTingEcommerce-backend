@@ -1,6 +1,7 @@
 package com.TingTing.ecommerce.service;
 
 import com.TingTing.ecommerce.dto.product.ProductDTO;
+import com.TingTing.ecommerce.exceptions.ProductNotExistException;
 import com.TingTing.ecommerce.model.Category;
 import com.TingTing.ecommerce.model.Product;
 import com.TingTing.ecommerce.repository.ProductRepository;
@@ -63,5 +64,13 @@ public class ProductService {
         product.setName(productDTO.getName());
         product.setPrice(productDTO.getPrice());
         productRepository.save(product);
+    }
+
+    public Product getProductById(Integer productId) {
+        Optional<Product> optionalProduct = productRepository.findById(productId);
+        if (!optionalProduct.isPresent()) {
+            throw new ProductNotExistException("Product id is invalid " + productId);
+        }
+        return optionalProduct.get();
     }
 }
