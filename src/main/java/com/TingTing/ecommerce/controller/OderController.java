@@ -22,11 +22,10 @@ public class OderController {
     private OrderService orderService;
     // stripe create session API
     @PostMapping("/create-checkout-session")
-    public ResponseEntity<StripeResponse> checkoutList(@RequestBody List<CheckoutItemDto> checkoutItemDtoList) throws StripeException, StripeException {
-        // create the stripe session
+    public ResponseEntity<StripeResponse> checkoutList(@RequestBody List<CheckoutItemDto> checkoutItemDtoList) throws StripeException {
         Session session = orderService.createSession(checkoutItemDtoList);
         StripeResponse stripeResponse = new StripeResponse(session.getId());
-        // send the stripe session id in response
-        return new ResponseEntity<StripeResponse>(stripeResponse, HttpStatus.OK);
+        return new ResponseEntity<StripeResponse>(stripeResponse,HttpStatus.OK);
     }
 }
+
