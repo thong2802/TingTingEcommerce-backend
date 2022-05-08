@@ -23,10 +23,10 @@ import java.util.Objects;
 @Service
 public class UserService {
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
-    AuthenticationService authenticationService;
+    private AuthenticationService authenticationService;
 
     @Transactional
     public ResponseDto signUp(SignUpDto signUpDto) {

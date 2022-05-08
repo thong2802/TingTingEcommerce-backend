@@ -15,10 +15,10 @@ import java.util.List;
 public class WishlistService {
 
     @Autowired
-    WishlistRepository wishlistRepository;
+    private WishlistRepository wishlistRepository;
 
     @Autowired
-    ProductService productService;
+    private ProductService productService;
 
     public void createWishList(Wishlist wishlist) {
         wishlistRepository.save(wishlist);

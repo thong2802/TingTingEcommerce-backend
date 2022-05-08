@@ -22,10 +22,10 @@ import java.util.List;
 public class WishlistController {
 
     @Autowired
-    WishlistService wishlistService;
+    private WishlistService wishlistService;
 
     @Autowired
-    AuthenticationService authenticationService;
+    private AuthenticationService authenticationService;
 
     // save product as wishList
     @PostMapping("/add")

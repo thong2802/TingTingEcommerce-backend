@@ -16,7 +16,7 @@ import java.util.Optional;
 public class ProductService {
 
     @Autowired
-    ProductRepository productRepository;
+    private ProductRepository productRepository;
 
     public void createProduct(ProductDTO productDTO, Category category) {
         Product product = getProductFromDto(productDTO, category);

@@ -19,4 +19,8 @@ public class ExceptionControllerAdvice {
     public final ResponseEntity<String> handleProductNotExistException(ProductNotExistException exception) {
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_FOUND);
     }
+    @ExceptionHandler(value = CartItemNotExistException.class)
+    public final ResponseEntity<String> handleCartItemNotExistException(CartItemNotExistException exception) {
+        return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_FOUND);
+    }
 }
